@@ -14,7 +14,7 @@ retains the original two-team capture-the-heart (CTF) mode; sections below
 that describe teams, hearts, and captures apply to that mode, and
 Battle-Royale-specific rules are called out where they differ.
 
-It is a fork of [Crewrift](https://github.com/Metta-AI/coworld-crewrift): it keeps
+It is a fork of [Crewrift](https://github.com/softmax-universe/coworld-crewrift): it keeps
 Crewrift's continuous 2D movement, line-of-sight, sprite protocol, server, and
 replay infrastructure, and replaces the social-deduction game layer (roles,
 tasks, voting) with teams, guns, hearts, and fog-of-war vision.
@@ -438,7 +438,7 @@ shipped value at the default `gunRange` (1050) and `fireCooldownTicks` (12):
   `fireWindupTicks` before each shot; fists do not.
 - Mid is the only tier whose damage is configurable (`ffaGunDamage`); every
   other number in the table is a bare constant with no knob
-  (https://github.com/Metta-AI/coworld-battle-royale/issues/18).
+  (https://github.com/softmax-universe/coworld-battle-royale/issues/18).
 
 **No weapon has ammo, durability, or a magazine.** A tier is a permanent
 property of the player: it is set to unarmed at match start, raised by touching
@@ -473,7 +473,7 @@ whose envelope stops at 700 px — is *more* accurate than the contract at its
 own maximum, ~94.5% (and every tier is ~99% at 525 px). Low's weakness is reach
 and cooldown, not precision.
 Whether that is intended is filed as
-https://github.com/Metta-AI/coworld-battle-royale/issues/19.
+https://github.com/softmax-universe/coworld-battle-royale/issues/19.
 
 FFA also re-points the two thrown/sprayed weapons at its deeper 20 HP pool.
 Against CTF's numbers:
@@ -489,7 +489,7 @@ The third row is the one to note: CTF triples a grenade's damage when the blast
 lands in the victim's own trench, and **FFA has no analog** — the same-trench
 branch resolves to the ordinary `ffaGrenadeDamage`, so grenading a trench camper
 is worth no more than grenading them in the open
-(https://github.com/Metta-AI/coworld-battle-royale/issues/20).
+(https://github.com/softmax-universe/coworld-battle-royale/issues/20).
 
 **No weapon tier touches movement.** Max speed, acceleration, friction, and the
 carrier/trench speed rules are identical for a fist-only player and a heavy

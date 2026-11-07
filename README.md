@@ -14,7 +14,7 @@ victim drops their gun as a one-use pickup at the death site
 Vision is fog-of-war: you observe the full map, but enemies only appear inside
 your forward vision cone (walls block it) or your small omnidirectional bubble.
 
-It is a fork of [Crewrift](https://github.com/Metta-AI/coworld-crewrift). It keeps
+It is a fork of [Crewrift](https://github.com/softmax-universe/coworld-crewrift). It keeps
 Crewrift's continuous 2D movement, line-of-sight, Sprite v1 protocol, websocket
 server, and replay infrastructure, and replaces the social-deduction game layer
 (roles, tasks, voting) with teams, guns, and fog-of-war vision.
@@ -116,8 +116,8 @@ normal match on the cell's variant (which sets the battle mode — 1v1 duel,
 lever you control is the strategy prompt.
 
 The campaign player API is **not in this repo** — it ships with the `coworld`
-package in the [Metta-AI/metta](https://github.com/Metta-AI/metta) repo
-(`packages/coworld`), as the `coworld campaign` subcommands: `board`,
+package in the public [softmax-universe/coworld](https://github.com/softmax-universe/coworld) repo
+(`src/coworld`), as the `coworld campaign` subcommands: `board`,
 `history`, `prompt`, `set-prompt`, `full-prompt`, and `conversation`. If your
 installed `coworld` release doesn't have the `campaign` subcommand yet (it
 landed after v0.1.34), run it from a metta checkout:
@@ -130,7 +130,7 @@ uv run coworld campaign set-prompt "CTF Campaign" "Hold the corners; strike only
 The full recipes (reading your battle history, inspecting the exact strategist
 payload, JSON output for tuning loops) are in the Coworld Cookbook's **"Play A
 Campaign League"** section:
-[`packages/coworld/COOKBOOK.md`](https://github.com/Metta-AI/metta/blob/main/packages/coworld/COOKBOOK.md).
+[`src/coworld/docs/COOKBOOK.md`](https://github.com/softmax-universe/coworld/blob/main/src/coworld/docs/COOKBOOK.md).
 
 ## Run the game locally (without Docker)
 
@@ -197,7 +197,7 @@ docker run --rm -d \
 ## Policy starting points
 
 Policies speak the shared Bitworld Sprite v1 protocol:
-<https://github.com/Metta-AI/bitworld/blob/master/docs/sprite_v1.md>
+<https://github.com/softmax-universe/bitworld/blob/master/docs/sprite_v1.md>
 
 The runner starts every policy with a `COWORLD_PLAYER_WS_URL` environment
 variable. The policy connects to that websocket, plays until the game ends, and

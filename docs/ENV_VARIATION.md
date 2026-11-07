@@ -258,16 +258,16 @@ only by a higher-tier pickup, and otherwise permanent (single life, so death
 ends it). Aim-jitter sigma is calibrated against `config.gunRange` alone and is
 NOT re-derived per tier, so the GV34 "80% at max range" figure holds for mid and
 heavy while low hits ~94.5% at its own 700 px maximum
-(https://github.com/Metta-AI/coworld-battle-royale/issues/19); the fist rolls no
+(https://github.com/softmax-universe/coworld-battle-royale/issues/19); the fist rolls no
 jitter and no trench duck at all, so a punch inside reach, cone, and line of
 sight is deterministic. No tier touches MOVEMENT — max speed, acceleration,
 friction, and the carrier/trench speed rules read `weaponTier` nowhere, so a
 heavy carrier moves exactly like an unarmed one. None of the
 low/heavy damage, tier range, cooldown-percentage, fist, or spray-cycle consts
 above has a `GameConfig` field — knobs proposed in
-https://github.com/Metta-AI/coworld-battle-royale/issues/18; the
+https://github.com/softmax-universe/coworld-battle-royale/issues/18; the
 same-trench grenade gap is
-https://github.com/Metta-AI/coworld-battle-royale/issues/20. ffa win logic: the
+https://github.com/softmax-universe/coworld-battle-royale/issues/20. ffa win logic: the
 game ends when at most one player is alive or the clock runs out, and the total
 placement order (alive > later death tick > kills > damage dealt > lower slot)
 always names a single winner — an ffa match is never a draw.
