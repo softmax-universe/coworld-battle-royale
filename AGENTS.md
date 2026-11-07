@@ -96,7 +96,7 @@ It is **not yet wired into CI** — that needs a human, because cubi tokens lack
 GitHub's `workflows` permission and a bot cannot modify `.github/workflows/`.
 To wire it up, add this to the `build` job in
 `.github/workflows/build.yml` (details:
-https://github.com/Metta-AI/coworld-ctf/issues/268 — cite full URLs here, not a
+https://github.com/softmax-universe/coworld-ctf/issues/268 — cite full URLs here, not a
 bare `#N`: softmax runs both GitHub and Forgejo with independently numbered
 issues, so a bare number resolves against whichever host the reader is on):
 
@@ -258,7 +258,7 @@ about it. What a player's feet are on is the 96px pedestal disc.
 The other five pickups (grenade, med kit, shield, spray can, barrier) still
 use 12px against 18-26px sprites — a milder version of the same mismatch (at
 worst ~2x, vs the heart's 5x), deliberately left alone by GV42's scope. Filed
-as https://github.com/Metta-AI/coworld-ctf/issues/266 with the measurements.
+as https://github.com/softmax-universe/coworld-ctf/issues/266 with the measurements.
 
 ## Terrain
 
